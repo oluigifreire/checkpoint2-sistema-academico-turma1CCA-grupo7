@@ -6,20 +6,27 @@ void derivadaSimples();
 
 int main() {
     int opcao;
+    float media = 0;
 
-    printf("===== SISTEMA =====\n");
-    printf("1 - Media\n");
-    printf("2 - Classificar\n");
-    printf("3 - Derivada\n");
-    printf("0 - Sair\n");
+    do {
+        printf("\n===== SISTEMA =====\n");
+        printf("1 - Media\n");
+        printf("2 - Classificar\n");
+        printf("3 - Derivada\n");
+        printf("0 - Sair\n");
+        printf("Escolha: ");
 
-    scanf("%d", &opcao);
+        scanf("%d", &opcao);
 
-    switch(opcao) {
-        case 1: calcularMedia(); break;
-        case 2: classificarAluno(0); break;
-        case 3: derivadaSimples(); break;
-    }
+        switch(opcao) {
+            case 1: media = calcularMedia(); break;
+            case 2: classificarAluno(media); break;
+            case 3: derivadaSimples(); break;
+            case 0: printf("Saindo...\n"); break;
+            default: printf("Opcao invalida!\n");
+        }
+
+    } while(opcao != 0);
 
     return 0;
 }

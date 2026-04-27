@@ -98,3 +98,14 @@ void derivadaSimples() {
     printf("b: "); scanf("%d", &b);
     printf("c: "); scanf("%d", &c);
 }
+void derivadaSimples() {
+    int a, b, c;
+
+    printf("Funcao: f(x)=ax^2+bx+c\n");
+
+    printf("a: "); scanf("%d", &a);
+    printf("b: "); scanf("%d", &b);
+    printf("c: "); scanf("%d", &c);
+
+    printf("Derivada: f'(x) = %dx + %d\n", 2*a, b);
+}

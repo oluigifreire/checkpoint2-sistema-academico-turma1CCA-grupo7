@@ -76,6 +76,12 @@ float calcularMedia() {
     return media;
 }
 void classificarAluno(float media) {
+
+    if(media <= 0) {
+        printf("Calcule a media primeiro!\n");
+        return;
+    }
+
     printf("Resultado: ");
 
     if(media >= 7)

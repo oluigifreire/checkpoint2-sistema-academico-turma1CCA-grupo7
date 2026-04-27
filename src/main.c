@@ -57,3 +57,21 @@ float calcularMedia() {
 
     return media;
 }
+float calcularMedia() {
+    float n1, n2, n3, media;
+
+    printf("Nota 1: "); scanf("%f", &n1);
+    printf("Nota 2: "); scanf("%f", &n2);
+    printf("Nota 3: "); scanf("%f", &n3);
+
+    if(n1 < 0 || n2 < 0 || n3 < 0) {
+        printf("Erro: notas invalidas!\n");
+        return 0;
+    }
+
+    media = (n1 + n2 + n3) / 3;
+
+    printf("Media: %.2f\n", media);
+
+    return media;
+}

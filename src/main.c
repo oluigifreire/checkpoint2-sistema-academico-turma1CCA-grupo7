@@ -76,6 +76,8 @@ float calcularMedia() {
     return media;
 }
 void classificarAluno(float media) {
+    printf("Resultado: ");
+
     if(media >= 7)
         printf("Aprovado\n");
     else if(media >= 5)

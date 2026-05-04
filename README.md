@@ -2,6 +2,10 @@
 
 ## Modalidade
 Grupo de 5 integrantes
+Gabriel Savoy RM:568991
+Raphael Tien RM:570261
+Luigi Freire RM:569958
+Victor Vidigal RM:571318
 
 ## Regras
 - Trabalhar no mesmo repositório
